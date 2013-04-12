@@ -16,7 +16,7 @@ Usage
 
 Copy G8MKLocalSearch.h and G8MKLocalSearch.m into your project.
 
-Import the G8MKLocalSearch.m into your class with #import "G8MKLocalSearch.h"
+Import the G8MKLocalSearch.h into your class with #import "G8MKLocalSearch.h"
 
 Call the localSearchRequest method like below.
 
