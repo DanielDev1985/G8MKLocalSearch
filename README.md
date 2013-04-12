@@ -14,6 +14,11 @@ Change your deployment target for switch between iOS5 and iOS>=6
 Usage
 ===============
 
+Copy G8MKLocalSearch.h and G8MKLocalSearch.m into your project. 
+Import the G8MKLocalSearch.m into your class with #import "G8MKLocalSearch.h"
+
+Call the localSearchRequest method like below.
+
 <pre>
   [G8MKLocalSearch localSearchRequest:searchBar.text inRegion:self.map.region completition:^(id result) {
 		//your completition code.
