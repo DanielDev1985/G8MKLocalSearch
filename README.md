@@ -1,7 +1,7 @@
 G8MKLocalSearch
 ===============
 
-G8MKLocalSearch is a simple search class to search addresses, places, cities, etc... in iOS6 >= or iOS &lt; 6.
+G8MKLocalSearch is a simple search class to search addresses, places, cities, etc... in iOS6.1 >= or iOS &lt;= 6.1
 
 iOS6 => return a MKLocalSearchResponse Object
 
@@ -9,7 +9,7 @@ iOS5 => return a JSON (NSDictinary) from Google
 
 Require the MapKit and CoreLocation framework.
 
-Change your deployment target for switch between iOS5 and iOS>=6
+Change your deployment target for switch between the iOS versions.
 
 
 Usage
@@ -24,8 +24,8 @@ Call the localSearchRequest method like below.
 <pre>
   [G8MKLocalSearch localSearchRequest:searchBar.text inRegion:self.map.region completition:^(id result) {
 		//your completition code.
-		//for iOS >= 6, result is a MKLocalSearchResponse Object;
-		//for iOS &lt; 5, result is a JSON (NSDictionary) from Google.
+		//for iOS >= 6.1, result is a MKLocalSearchResponse Object;
+		//for iOS &lt;= 5, result is a JSON (NSDictionary) from Google.
 		NSLog(@"%@", result);
 	}];
 </pre>
