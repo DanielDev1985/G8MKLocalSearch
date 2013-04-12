@@ -32,8 +32,8 @@
 {
 	[G8MKLocalSearch localSearchRequest:searchBar.text inRegion:self.map.region completition:^(id result) {
 		//your completition code.
-		//for iOS >= 6, result is a MKLocalSearchResponse Object;
-		//for iOS < 5, result is a JSON (NSDictionary) from Google.
+		//for iOS >= 6.1, result is a MKLocalSearchResponse Object;
+		//for iOS < 6.1, result is a JSON (NSDictionary) from Google.
 		NSLog(@"%@", result);
 	}];
 }

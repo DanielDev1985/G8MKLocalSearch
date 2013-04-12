@@ -13,7 +13,7 @@
 +(void)localSearchRequest:(NSString *)naturalLanguageQuery inRegion:(MKCoordinateRegion)region completition:(void(^) (id result))completition
 {
 	
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < 60000
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 60100
 	
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
 		
