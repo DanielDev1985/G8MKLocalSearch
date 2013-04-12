@@ -1,7 +1,7 @@
 G8MKLocalSearch
 ===============
 
-G8MKLocalSearch is a simple search class to search addresses, places, cities, etc... in iOS6.1 >= or iOS &lt;= 6.1
+G8MKLocalSearch is a simple search class to search addresses, places, cities, etc... in iOS6.1 >= or iOS &lt; 6.1
 
 iOS6 => return a MKLocalSearchResponse Object
 
@@ -25,12 +25,12 @@ Call the localSearchRequest method like below.
   [G8MKLocalSearch localSearchRequest:searchBar.text inRegion:self.map.region completition:^(id result) {
 		//your completition code.
 		//for iOS >= 6.1, result is a MKLocalSearchResponse Object;
-		//for iOS &lt;= 5, result is a JSON (NSDictionary) from Google.
+		//for iOS &lt; 6.1, result is a JSON (NSDictionary) from Google.
 		NSLog(@"%@", result);
 	}];
 </pre>
 
-Note from Google: the Geocoding API may only be used in conjunction with a Google map; geocoding results without displaying them on a map is prohibited. For complete details on allowed usage, consult the Maps API Terms of Service License Restrictions.
+Note by Google: the Geocoding API may only be used in conjunction with a Google map; geocoding results without displaying them on a map is prohibited. For complete details on allowed usage, consult the Maps API Terms of Service License Restrictions.
 
 
 Author Infos
