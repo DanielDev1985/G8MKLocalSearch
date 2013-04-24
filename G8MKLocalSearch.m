@@ -17,7 +17,7 @@
 	
 	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
 		
-		NSMutableString *urlString = [NSMutableString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true", naturalLanguageQuery];
+		NSMutableString *urlString = [NSMutableString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true", [naturalLanguageQuery stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 		[urlString setString:[urlString stringByReplacingOccurrencesOfString:@" " withString:@"+"]];
 		
 		NSURL *requestUrl = [NSURL URLWithString:urlString];
